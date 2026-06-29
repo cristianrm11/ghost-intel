@@ -1,0 +1,27 @@
+{
+  "name": "ghost-intel",
+  "version": "0.1.0",
+  "description": "AI-powered career intelligence pipeline — aggregates job market data, normalizes with Claude, and queries in natural language",
+  "type": "module",
+  "bin": {
+    "ghost-intel": "./dist/cli/index.js"
+  },
+  "scripts": {
+    "dev": "tsx src/cli/index.ts",
+    "build": "tsc",
+    "setup": "tsx src/cli/index.ts setup",
+    "fetch": "tsx src/cli/index.ts fetch",
+    "analyze": "tsx src/cli/index.ts analyze",
+    "search": "tsx src/cli/index.ts search"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.30.0",
+    "@clack/prompts": "^0.9.0",
+    "picocolors": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0"
+  }
+}
